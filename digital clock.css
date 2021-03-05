@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,500;1,600;1,700&display=swap');
+
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Josefin Sans', sans-serif;}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #10101E;
+}
+
+.datetime{
+    color: #fff;
+    background: #10101E;
+    width: 420px;
+    padding: 15px 10px;
+    border: 3px solid #2BAE66FF;
+    border-radius: 10px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(255,255,255, 0.1));
+    transition:all .5s ease;
+}
+.datetime:hover{
+    background: #2BAE66FF;
+    box-shadow: 0 0 30px #2BAE66FF;
+}
+
+.date{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.time{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child){
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin: 0px 6px;
+}
+
+.time span:last-child{
+    background: #2BAE66FF;
+    border-radius:5px;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding:0px 5px;
+    padding-top: 5px;
+}
